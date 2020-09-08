@@ -26,7 +26,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                dotnet tool install — global dotnet-sonarscanner
+                dotnet tool install --global dotnet-sonarscanner --version 4.10.0
                 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
                 dotnet build-server shutdown
                 dotnet sonarscanner begin /k:FirstDotNetProject /d:sonar.host.url=http://35.229.248.239:9000 /d:sonar.cs.opencover.reportsPaths=FirstDotNetProject.FirstDotNetProject/coverage.opencover.xml /d:sonar.coverage.exclusions=”**UnitTest*.cs”
