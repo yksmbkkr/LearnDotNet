@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
+                sudo apt-get install -y openjdk-8-jdk
                 dotnet build
                 """
             }
@@ -26,7 +27,8 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                export JAVA_HOME="/usr/local/openjdk-8/jre/bin"
+                sudo apt-get install -y openjdk-8-jdk
+                export JAVA_HOME="/usr/local/openjdk-8/bin"
                 export PATH="$PATH:/tmp/.dotnet/tools"
                 dotnet tool install --global dotnet-sonarscanner --version 4.10.0
                 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
