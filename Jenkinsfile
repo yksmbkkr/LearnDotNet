@@ -26,6 +26,11 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
+                apt-get update && \
+                apt-get install -y curl \
+                wget \
+                openjdk-8-jdk
+                export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java"
                 export PATH="$PATH:/tmp/.dotnet/tools"
                 dotnet tool install --global dotnet-sonarscanner --version 4.10.0
                 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
