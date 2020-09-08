@@ -26,14 +26,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                // export JAVA_HOME="/usr/local/openjdk-11/jre/bin"
-                // export PATH="/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tmp/.dotnet/tools"
-                // dotnet tool install --global dotnet-sonarscanner --version 4.10.0
-                // dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-                // dotnet build-server shutdown
-                // dotnet sonarscanner begin /k:FirstDotNetProject /d:sonar.host.url=http://35.229.248.239:9000 /d:sonar.cs.opencover.reportsPaths=FirstDotNetProject.FirstDotNetProject/coverage.opencover.xml /d:sonar.coverage.exclusions=”**UnitTest*.cs”
                 dotnet build
-                // dotnet sonarscanner end
                 """
             }
         }
