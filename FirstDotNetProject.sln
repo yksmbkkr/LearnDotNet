@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstDotNetProject", "FirstDotNetProject\FirstDotNetProject.csproj", "{C6BF9E26-7E16-4A25-89E0-DAF5B27B7319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstLib", "FirstLib\FirstLib.csproj", "{C6E961C8-2C84-473B-B952-1148750984C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6BF9E26-7E16-4A25-89E0-DAF5B27B7319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BF9E26-7E16-4A25-89E0-DAF5B27B7319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BF9E26-7E16-4A25-89E0-DAF5B27B7319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BF9E26-7E16-4A25-89E0-DAF5B27B7319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E961C8-2C84-473B-B952-1148750984C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E961C8-2C84-473B-B952-1148750984C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E961C8-2C84-473B-B952-1148750984C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E961C8-2C84-473B-B952-1148750984C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
