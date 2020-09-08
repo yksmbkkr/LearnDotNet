@@ -34,7 +34,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                dotnet run
+                dotnet run --project FirstDotNetProject
                 """
             }
         }
