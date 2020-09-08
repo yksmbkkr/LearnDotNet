@@ -26,6 +26,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
+                export JAVA_HOME="/usr/local/openjdk-8/jre/bin"
                 export PATH="$PATH:/tmp/.dotnet/tools"
                 dotnet tool install --global dotnet-sonarscanner --version 4.10.0
                 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
