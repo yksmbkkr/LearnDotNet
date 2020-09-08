@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                sudo apt-get install -y openjdk-8-jdk
+                apt install -y openjdk-8-jdk
                 dotnet build
                 """
             }
