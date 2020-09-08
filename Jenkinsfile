@@ -18,7 +18,9 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
+                ls
                 cd FirstDotNetProject
+                ls
                 dotnet build
                 """
             }
