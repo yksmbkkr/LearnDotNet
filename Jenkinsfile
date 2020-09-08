@@ -18,9 +18,6 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                ls
-                cd FirstDotNetProject
-                ls
                 dotnet build
                 """
             }
@@ -29,7 +26,6 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                cd FirstDotNetProject
                 dotnet build
                 """
             }
@@ -38,7 +34,6 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                cd FirstDotNetProject
                 dotnet run
                 """
             }
