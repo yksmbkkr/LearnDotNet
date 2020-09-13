@@ -9,8 +9,5 @@ namespace FirstDotNetProject
         {
             Console.WriteLine("Hello World!");
         }
-        public int toTest(){
-            return 0;
-        }
     }
 }

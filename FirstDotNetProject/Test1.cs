@@ -1,6 +1,5 @@
 using FirstLib;
 using Xunit;
-using PRJ1 = FirstDotNetProject;
 
 namespace FirstDotNetProject
 {
@@ -23,8 +22,22 @@ namespace FirstDotNetProject
         [Fact]
         public void Test3()
         {
-            var p1 = new PRJ1.Program();
+            var p1 = new SampleClass();
             Assert.Equal(0, p1.toTest());
+        }
+        
+        [Fact]
+        public void Test4()
+        {
+            var p1 = new SampleClass();
+            Assert.Equal(1, p1.toTest2());
+        }
+        
+        [Fact]
+        public void Test5()
+        {
+            var p1 = new SampleClass();
+            Assert.Equal(2, p1.toTest3());
         }
     }
 }
