@@ -24,4 +24,8 @@
       <ProjectReference Include="..\FirstLib\FirstLib.csproj" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <GenerateProgramFile>false</GenerateProgramFile>
+    </PropertyGroup>
+
 </Project>
