@@ -1,14 +1,13 @@
-using System;
 using FirstLib;
-using PRJ1 = FirstDotNetProject;
 using Xunit;
+using PRJ1 = FirstDotNetProject;
 
-namespace FirstTest
+namespace FirstDotNetProject
 {
-    public class UnitTest1
+    public class Test1
     {
         [Fact]
-        public void Test1()
+        public void Test0()
         {
             var ob = new Addition();
             Assert.Equal("ok", ob.display());

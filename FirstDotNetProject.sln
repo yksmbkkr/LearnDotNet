@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstDotNetProject", "First
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstLib", "FirstLib\FirstLib.csproj", "{C6E961C8-2C84-473B-B952-1148750984C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstTest", "FirstTest\FirstTest.csproj", "{5B8A7279-49CE-43DF-9F2B-1DC204702E05}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +18,5 @@ Global
 		{C6E961C8-2C84-473B-B952-1148750984C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6E961C8-2C84-473B-B952-1148750984C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6E961C8-2C84-473B-B952-1148750984C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B8A7279-49CE-43DF-9F2B-1DC204702E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B8A7279-49CE-43DF-9F2B-1DC204702E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B8A7279-49CE-43DF-9F2B-1DC204702E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B8A7279-49CE-43DF-9F2B-1DC204702E05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
