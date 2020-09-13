@@ -6,7 +6,7 @@
             int retval = a+10;
             for (int i = 0; i < b; i++) 
             {
-            retval = retval + b;
+            retval = retval + b - (2*a);
             }
             return retval;
         }
