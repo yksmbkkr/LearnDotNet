@@ -2,7 +2,7 @@
 pipeline {
     agent {
         docker {
-            image 'yksmbkkr/jdk-dotnetcoresdk:1.0'
+            image 'nosinovacao/dotnet-sonar:20.07.0'
         }
     }
     environment {
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                dotnet build
+                dotnet build FirstDotNetProject.sln
                 """
             }
         }
@@ -26,10 +26,22 @@ pipeline {
             steps {
                 sh """
                 #!/bin/bash
-                dotnet build
+                dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
                 """
             }
         }
+        stage('SonarQube') {
+            steps {
+                withSonarQubeEnv('sonarqube') {
+                    sh """
+                    #!/bin/bash
+                    dotnet build-server shutdown
+                    dotnet /sonar-scanner/SonarScanner.MSBuild.dll begin /k:FirstDotNetProject /d:sonar.host.url=http://35.229.248.239:9000 /d:sonar.cs.opencover.reportsPaths=FirstDotNetProject.FirstDotNetProject/coverage.opencover.xml /d:sonar.coverage.exclusions=”**UnitTest*.cs”
+                    dotnet build FirstDotNetProject.sln
+                    dotnet /sonar-scanner/SonarScanner.MSBuild.dll end 
+                    """
+                }
+            }
         stage('Run') {
             steps {
                 sh """
