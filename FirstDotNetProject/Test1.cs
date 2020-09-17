@@ -12,12 +12,12 @@ namespace FirstDotNetProject
             Assert.Equal("ok", ob.display());
         }
         
-        [Fact]
-        public void Test2()
-        {
-            var c1 = new Class1();
-            Assert.NotEqual(0, c1.ret_val(5,5));
-        }
+        // [Fact]
+        // public void Test2()
+        // {
+        //     var c1 = new Class1();
+        //     Assert.NotEqual(0, c1.ret_val(5,5));
+        // }
         
         // [Fact]
         // public void Test3()
